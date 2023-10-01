@@ -10,11 +10,8 @@ html, body {
 
 body {
     font-family: 'Inter', sans-serif;
-    font-size: 13px;
+    font-size: 14px;
     color: #000000;
-
-    background: rgb(148,187,233);
-    background: radial-gradient(circle, rgba(148,187,233,0.18) 0%, rgba(238,174,202,0.18) 100%);
 }
 
 a {

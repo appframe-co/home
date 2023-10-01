@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project API documentation | AppFrame</title>
+    <link rel="stylesheet" href="/styles/global.css">
+    <link rel="stylesheet" href="/styles/project-rest.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="logo">
+          <a href="/"><span>AppFrame .dev</span></a>
+        </div>
+        <ul class="links">
+          <li><a href="/pricing">Pricing</a></li>
+          <li><a href="/docs/api/project-rest" class="active">Project API documentation</a></li>
+        </ul>
+      </div>
+      <div class="docs">
+        <div class="section">
+          <h1>REST Project API</h1>
+          <p class="p-preview-text">Use the Project API on any platform, including the web, apps, and desktop.</p>
+          <p class="p-preview-text">
+            The Project API uses the AppFrame backend, you can focus on building a unique and customized dev experience. 
+          </p>
+          <p class="p-preview-text">
+            You can create catalog with items and applications, blog with news and subscriptions, portfolio and others that are fully integrated with a project.
+          </p>
+        </div>
+        <div class="section">
+          <h2>Authentication</h2>
+          <p class="p-text">All REST Project API queries require a valid AppFrame project access token.</p>
+          <p class="p-text">Include your token as a <code class="code">X-AppFrame-Project-Access-Token</code> header on all API queries. </p>
+
+          <div class="note caution">
+            <h4>Caution</h4>
+            <p>Access token should be treated as secret and not used on the client-side.</p>
+          </div>
+        </div>
+        <div class="section">
+          <h2>Endpoints and queries</h2>
+          <p class="p-text">All Project REST API endpoints follow this pattern:</p>
+          <p class="p-text"><code class="code">{{urlProjectApi}}/2023-07/structures/{structure_code}.json</code></p>
+          <h3>Versioning</h3>
+          <p class="p-text">
+            The Project API is versioned, with new releases four times a year. 
+            To keep your app stable, make sure that you specify a supported version in the URL.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

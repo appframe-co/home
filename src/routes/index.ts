@@ -11,7 +11,14 @@ export default ({ app }: RoutesInput) => {
     });
     app.get('/pricing', async (req: Request, res: Response, next: NextFunction) => {
         try {
-            res.render('pricing', {urlAccount: process.env.URL_ACCOUNT});
+            res.render('pricing');
+        } catch (e) {
+            throw(e);
+        }
+    });
+    app.get('/docs/api/project-rest', async (req: Request, res: Response, next: NextFunction) => {
+        try {
+            res.render('project-rest', {urlProjectApi: process.env.URL_PROJECT_API});
         } catch (e) {
             throw(e);
         }
