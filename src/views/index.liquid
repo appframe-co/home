@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AppFrame</title>
     <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
       rel="preconnect"
@@ -14,6 +15,13 @@
   </head>
   <body>
     <div class="container">
+      <div class="header">
+        <ul class="links">
+          <li><a href="/pricing">Pricing</a></li>
+          <li><a href="/docs/api/project-rest">Project API documentation</a></li>
+        </ul>
+      </div>
+
       <div class="text">
         <span class="logo">AppFrame</span>
         is a platform for building
@@ -21,9 +29,9 @@
         projects
       </div>
       <div class="actions">
-        <a href={{urlAccount | append: '/signup'}}>Create Project</a>
+        <a href={{urlAccount | append: '/signup'}}>Start free trial</a>
         <span>or</span>
-        <a href={{urlAccount | append: '/login'}}>Go to existing Project</a>
+        <a href={{urlAccount | append: '/login'}}>Log in</a>
       </div>
     </div>
   </body>

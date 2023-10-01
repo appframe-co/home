@@ -21,56 +21,8 @@ a {
     text-decoration: none;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-.text {
-    width: 960px;
-    font-size: 80px;
-    font-weight: 700;
-    display: block;
-    word-break: break-word;
-    line-height: 100px;
-}
-
-.logo {
-    background-color: #008fc5;
-    color: #ffffff;
-    padding: 0 18px 13px;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.lighweight {
-    font-weight: 400;
-}
-
-.actions {
-    width: 960px;
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    font-size: 24px;
-    padding-top: 25px;
-    justify-content: end;
-    align-items: center;
-}
-
-.actions a {
-    color: #000000;
-    border: 2px solid #008fc5;
-    padding: 4px 12px;
-    border-radius: 6px;
-}
-.actions span {
-    font-size: 20px;
-}
-.actions a:hover {
-    background-color: #008fc5;
-    color: #ffffff;
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }

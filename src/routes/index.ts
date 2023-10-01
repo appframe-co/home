@@ -9,4 +9,11 @@ export default ({ app }: RoutesInput) => {
             throw(e);
         }
     });
+    app.get('/pricing', async (req: Request, res: Response, next: NextFunction) => {
+        try {
+            res.render('pricing', {urlAccount: process.env.URL_ACCOUNT});
+        } catch (e) {
+            throw(e);
+        }
+    });
 };
