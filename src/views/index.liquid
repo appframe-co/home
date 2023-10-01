@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppFrame</title>
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="text">
+        <span class="logo">AppFrame</span>
+        is a platform for building
+        <span class="lighweight">lightweight</span>
+        projects
+      </div>
+      <div class="actions">
+        <a href={{urlAccount | append: '/signup'}}>Create Project</a>
+        <span>or</span>
+        <a href={{urlAccount | append: '/login'}}>Go to existing Project</a>
+      </div>
+    </div>
+  </body>
+</html>

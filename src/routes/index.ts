@@ -4,7 +4,7 @@ import { Request, Response, NextFunction } from 'express';
 export default ({ app }: RoutesInput) => {
     app.get('/', async (req: Request, res: Response, next: NextFunction) => {
         try {
-            res.send('home page')
+            res.render('index', {urlAccount: process.env.URL_ACCOUNT});
         } catch (e) {
             throw(e);
         }
