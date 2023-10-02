@@ -1,3 +1,9 @@
+hr {
+    border: none;
+    margin: 12px 0;
+    border-bottom: 1px solid #d8e8f1;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -108,4 +114,13 @@
 .caution p {
     color: #4c5120;
     line-height: 22px;
+}
+.p-text a {
+    color: #008fc5;
+    font-weight: 500;
+    padding: 2px;
+    border-bottom: 1px solid #008fc5;
+}
+.p-text a:hover {
+    border-bottom: none;
 }

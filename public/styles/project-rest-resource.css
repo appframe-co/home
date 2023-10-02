@@ -1,0 +1,273 @@
+hr {
+    border: none;
+    margin: 12px 0;
+    border-bottom: 1px solid #d8e8f1;
+}
+.green {
+    color: #006d51;
+}
+.purple {
+    color: #4b3df7;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.logo {
+    background-color: #000000;
+    color: #ffffff;
+    height: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.logo a {
+    color: #ffffff;
+    overflow: hidden;
+    font-weight: 500;
+    line-height: 30px;
+    display: block;
+    width: 100%;
+    padding: 0 12px;
+}
+
+.header {
+    width: 960px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 14px;
+    padding: 15px 10px;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+}
+
+.links li a {
+    color: #000000;
+    font-weight: 500;
+}
+.links li a:hover {
+    color: #008fc5;
+}
+.links li a.active {
+    color: #008fc5;
+}
+
+.docs {
+    width: 960px;
+}
+.docs h1 {
+    margin-bottom: 16px;
+    font-size: 32px;
+}
+.docs .p-preview-text {
+    color: #5c5f62;
+    margin-bottom: 16px;
+    line-height: 22px;
+    font-size: 16px;
+}
+.section {
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+    border-bottom: 1px solid #d8e8f1;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width: 100%;
+}
+.section .left {
+    width: 500px;
+}
+.section .right {
+    width: 460px;
+}
+.section h2 {
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+.section h3 {
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: #008fc5;
+}
+.p-text {
+    color: #5c5f62;
+    margin-bottom: 16px;
+    line-height: 18px;
+}
+.code {
+    color: #0d4151;
+    background-color: #fafbfb;
+    border: 1px solid #d2d5d8;
+    border-radius: 3px;
+    padding: 0 4px;
+}
+
+.note {
+    padding: 16px;
+    font-size: 16px;
+    border-radius: 6px;
+}
+.note h4 {
+    font-weight: 500;
+    margin-bottom: 2px;
+    color: #4c5120;
+}
+.caution {
+    border: 1px solid #d7e540;
+    background-color: #f5fad3;
+}
+.caution p {
+    color: #4c5120;
+    line-height: 22px;
+}
+
+.properties-heading {
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: #202223;
+    font-weight: 500;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d8e8f1;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+.list .item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.item-prop {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.prop, .label {
+    background-color: #ebf4fa;
+    border-radius: 3px;
+    color: #1b6780;
+    padding: 0 4px;
+    font-weight: 600;
+}
+.label {
+    font-weight: 400;
+    font-size: 12px;
+}
+.label.plain {
+    background-color: transparent;
+    color: #6d7175;
+}
+.label-green {
+    text-align: center;
+    min-width: 45px;
+    background-color: #d4f5e7;
+    border: 1px solid #008060;
+    color: #006d51;
+    font-weight: 600;
+    padding: 0 4px;
+    border-radius: 3px;
+    height: 18px;
+}
+.label-purple {
+    text-align: center;
+    min-width: 45px;
+    background-color: #edecff;
+    border: 1px solid #6055ff;
+    color: #4b3df7;
+    font-weight: 600;
+    padding: 0 4px;
+    border-radius: 3px;
+    height: 18px;
+}
+.label-purple-wo-border {
+    text-align: center;
+    min-width: 45px;
+    background-color: #edecff;
+    color: #4b3df7;
+    padding: 0 4px;
+    border-radius: 3px;
+    height: 18px;
+}
+.plain-underline {
+    text-decoration: underline;
+}
+.item .p-text {
+    margin-bottom: 0;
+}
+.section .heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.heading {
+    margin-bottom: 16px;
+}
+.heading h2 {
+    margin-bottom: 0;
+}
+.label.red {
+    background-color: #fee9e8;
+    color: #981c06;
+}
+
+.endpoints-wrapper {
+    background-color: #f6f6f7;
+    border: 1px solid #d2d5d8;
+    border-radius: 6px;
+    padding: 3px;
+}
+.endpoints-wrapper .heading {
+    color: #1b6780;
+    background-color: #ffffff;
+    padding: 6px 6px 6px 8px;
+}
+.endpoints {
+    padding: 4px 16px;
+}
+.endpoints li {
+    margin: 12px 0;
+}
+.endpoint .url {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
+.endpoint .path {
+    white-space: pre;
+}
+.endpoint .text {
+    margin-top: 4px;
+    margin-left: 53px;
+    padding-left: 8px;
+    color: #6d7175;
+    font-size: 12px;
+}
+
+.examples .heading {
+    margin-bottom: 12px;
+    font-size: 20px;
+    color: #202223;
+    font-weight: 600;
+}
+.example-request {
+    border: 1px solid #d2d5d8;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    padding: 8px 12px;
+}

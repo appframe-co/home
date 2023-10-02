@@ -5,8 +5,13 @@ import http from 'http';
 import cors from 'cors';
 import { Liquid } from 'liquidjs'
 import 'dotenv/config'
+import path from 'path';
 
-const engine = new Liquid();
+const engine = new Liquid({
+    extname: '.liquid',
+    jsTruthy: true,
+    cache: process.env.NODE_ENV === 'production'
+});
 
 import Routes from "./routes";
 
@@ -24,7 +29,11 @@ app.use(bodyParser.urlencoded({ extended: true}));
 app.use(express.static('./public'));
 
 app.engine('liquid', engine.express()); 
-app.set('views', './src/views');
+app.set('views', [
+    path.join(__dirname, '/views'),
+    path.join(__dirname, '/views/pages'),
+    path.join(__dirname, '/views/snippets'),
+]);
 app.set('view engine', 'liquid');
 
 Routes({ app });
