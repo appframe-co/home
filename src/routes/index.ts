@@ -30,4 +30,11 @@ export default ({ app }: RoutesInput) => {
             throw(e);
         }
     });
+    app.get('/docs/api/project-rest/2023-07/resources/menu', async (req: Request, res: Response, next: NextFunction) => {
+        try {
+            res.render('2023-07/resource-menu', {urlProjectApi: process.env.URL_PROJECT_API});
+        } catch (e) {
+            throw(e);
+        }
+    });
 };
